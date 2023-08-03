@@ -1,0 +1,75 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.componentes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 315px;
+    margin: 10px;
+    min-height: 100vh;
+}
+
+.card-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 315px;
+    height: 245px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid hsl(227, 7%, 75%);
+    gap: 30px;
+}
+
+img {
+    width: 30%;
+    border-radius: 50px;
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
+}
+
+.city,
+.description-numbers {
+    color: hsl(227, 10%, 46%);
+}
+
+.card-inferior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 315px;
+    height: 80px;
+    flex-direction: row;
+    border-radius: 0 0 10px 10px;
+    background-color: aliceblue;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers {
+    font-weight: bold;
+}
+
+@media(max-width:450px) {
+
+    .componentes,
+    .card-inferior,
+    .card-superior {
+        width: 278px;
+    }
+}
